@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherReg">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edu"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/teacher"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:id="@+id/text1"
+            android:text="Teacher Registration "
+            android:fontFamily="@font/font1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#FF000000"
+            android:src="@drawable/profile_image"
+            android:layout_marginTop="30dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/docName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:drawableStart="@drawable/ic_profile"
+            android:hint="Enter your Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/docNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:drawableStart="@drawable/ic_number"
+            android:hint="Enter your Teacher ID "
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/docPhNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="Enter your Phone Number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/availableDept"
+            android:layout_gravity="center"
+            android:popupBackground="#fff"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/Departments">
+
+        </Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/availableSept"
+            android:layout_gravity="center"
+            android:popupBackground="#fff"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/Subject">
+
+        </Spinner>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PatientEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="Enter your Email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PatientPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="Enter/Create your Password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/RegButton"
+            android:text="Register Now"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"></Button>
+        <TextView
+            android:id="@+id/gotoLogin"
+            android:text="Already have a Account/Login now"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            ></TextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

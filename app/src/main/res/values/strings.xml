@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hospital_</string>
+    <string name="navigation_open">Nav_open</string>
+    <string name="navigation_close">nav_close</string>
+
+
+    <string-array name="Departments">
+        <item>-> Select Your Department</item>
+        <item>Elementary school</item>
+        <item>Middle school</item>
+        <item>High school</item>
+
+    </string-array>
+    <string-array name="Subject">
+        <item>-> Select Your Subject</item>
+        <item>General</item>
+        <item>Maths</item>
+        <item>English</item>
+        <item>Science</item>
+    </string-array>
+
+</resources>

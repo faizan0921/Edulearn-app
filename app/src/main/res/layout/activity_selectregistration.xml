@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edu"
+    android:orientation="vertical"
+    tools:context=".SelectRegistrationActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="Registration Page"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/font4"
+        android:gravity="center"
+        android:text="Select the Category "
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/patientregbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:paddingLeft="30dp"
+        android:text="I am a student"></Button>
+
+    <Button
+        android:id="@+id/docotorregbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="I am a teacher"></Button>
+
+    <TextView
+        android:id="@+id/Goback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="145dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Already have a account/Go back"
+        android:textColor="@color/black"
+        android:textSize="18sp"></TextView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
